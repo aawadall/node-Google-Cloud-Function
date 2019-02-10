@@ -1,8 +1,5 @@
-const moment = require('moment');
+const dateFormatter = require('dateFormatter');
 
-function dateFormatter() {
-    return moment().format('Do MMMM YYYY, hh:mm:ss');
-}
 
 exports.nodeHTTP = function entryHTTP(req, resp) {
     resp.status(200).send(dateFormatter());
