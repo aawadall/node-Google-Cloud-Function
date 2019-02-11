@@ -2,7 +2,7 @@ const formatter = require('./dateFormatter');
 
 
 exports.nodeHTTP = function entryHTTP(req, resp) {
-    console.log(`HELLO HTTP: ${req}`);
+    console.log(`HTTP Request from: ${req.ip}`);
     resp.status(200).send(formatter.dateFormatter());
 };
 
