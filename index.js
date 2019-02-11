@@ -19,3 +19,6 @@ exports.nodeStorage = function entryStorage(event, callback) {
     console.log(`File: ${event.data.name}`);
     callback();
 };
+
+// check this out
+// https://cloud.google.com/nodejs/getting-started/using-cloud-storage
