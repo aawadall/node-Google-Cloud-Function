@@ -20,5 +20,5 @@ exports.nodeStorage = function entryStorage(event, callback) {
     callback();
 };
 
-// check this out
-// https://cloud.google.com/nodejs/getting-started/using-cloud-storage
+
+// TODO: read https://cloud.google.com/nodejs/getting-started/using-cloud-storage

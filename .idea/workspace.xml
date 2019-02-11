@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="529">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -123,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1549827791474</updated>
       <workItem from="1549827793610" duration="3213000" />
-      <workItem from="1549903097260" duration="1429000" />
+      <workItem from="1549903097260" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="3 entry functions">
       <created>1549828598297</created>
@@ -174,11 +174,25 @@
       <option name="project" value="LOCAL" />
       <updated>1549903663183</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some storage metadata">
+      <created>1549922162335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1549922162335</updated>
+    </task>
+    <task id="LOCAL-00009" summary="future work">
+      <created>1549922281558</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1549922281558</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4642000" />
+    <option name="totallyTimeSpent" value="4880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -215,7 +229,9 @@
     <MESSAGE value="functions created from sdk" />
     <MESSAGE value="test deploying updates" />
     <MESSAGE value="can I show req IP?" />
-    <option name="LAST_COMMIT_MESSAGE" value="can I show req IP?" />
+    <MESSAGE value="some storage metadata" />
+    <MESSAGE value="future work" />
+    <option name="LAST_COMMIT_MESSAGE" value="future work" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -230,8 +246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="529">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
         </state>
       </provider>
     </entry>
