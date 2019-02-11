@@ -13,5 +13,9 @@ exports.nodePubsub = function entryPubsub(event, callback) {
 
 exports.nodeStorage = function entryStorage(event, callback) {
     console.log(`Hello STORAGE! ${formatter.dateFormatter()}`);
+    console.log(`Event ID: ${event.eventId}`);
+    console.log(`Event Type: ${event.eventType}`);
+    console.log(`Bucket: ${event.data.bucket}`);
+    console.log(`File: ${event.data.name}`);
     callback();
 };
