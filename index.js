@@ -16,7 +16,9 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
     fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
-    storage.bucket(bucketName).upload(`/tmp/${fileName}`, {
+    const localFile = `/tmp/${fileName}`;
+    console.log(`File to populate: ${localFile}`);
+    storage.bucket(bucketName).upload(localFile, {
         gzip: false,
         metadata: {
             cacheControl: 'public, max-age=31536000',
