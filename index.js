@@ -1,6 +1,8 @@
 const formatter = require('./dateFormatter');
 const app = require('express')();
 const bodyParser = require('body-parser');
+const {storage} = require('@google-cloud/storage');
+const projectId = 'cloud-functions-230120';
 
 exports.nodeHTTP = function entryHTTP(req, resp) {
     app.use(bodyParser.json());
