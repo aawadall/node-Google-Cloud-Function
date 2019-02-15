@@ -1,5 +1,6 @@
 const formatter = require('./dateFormatter');
 const {Storage} = require('@google-cloud/storage');
+
 const projectId = 'cloud-functions-230120';
 const storage = new Storage({
     projectId: projectId
@@ -9,6 +10,13 @@ const bucketName = 'gs://atm_events/';
 exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
+    const fileName = 'LOCAL';
+    storage.bucket(bucketName).upload(fileName, {
+        gzip: false,
+        metadata: {
+            cacheControl: 'public, max-age=31536000',
+        },
+    });
     console.log(`Body: ${JSON.stringify(req.body)}`);
     resp.status(200).send(formatter.dateFormatter());
 };
