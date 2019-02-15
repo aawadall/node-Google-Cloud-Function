@@ -12,18 +12,19 @@ const bucketName = 'gs://atm_events/';
 exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
-    const fileName = `/tmp/${uuid.v4()}`;
+    const fileName = `${uuid.v4()}`;
     fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
-    storage.bucket(bucketName).upload(fileName, {
+    storage.bucket(bucketName).upload(`/tmp/${fileName}`, {
         gzip: false,
         metadata: {
             cacheControl: 'public, max-age=31536000',
         },
     });
     console.log(`Body: ${JSON.stringify(req.body)}`);
-    resp.status(200).send(formatter.dateFormatter());
+    const replyString = `${formatter.dateFormatter()}: File Created: ${fileName}`;
+    resp.status(200).send(replyString);
 };
 
 exports.nodePubsub = function entryPubsub(event, callback) {
