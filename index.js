@@ -12,7 +12,7 @@ const bucketName = 'gs://atm_events/';
 exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
-    const fileName = `${uuid.v4()}`;
+    const fileName = `${uuid.v4()}.json`;
     fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
@@ -25,7 +25,7 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
         },
     });
     console.log(`Body: ${JSON.stringify(req.body)}`);
-    const replyString = `${formatter.dateFormatter()}: File Created: ${fileName}`;
+    const replyString = `${formatter.dateFormatter()}: File Created: ${localFile}`;
     resp.status(200).send(replyString);
 };
 
