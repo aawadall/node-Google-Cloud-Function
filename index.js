@@ -14,8 +14,12 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
     console.log(`HTTP Request from: ${req.ip}`);
     const fileName = `${uuid.v4()}.json`;
     const localFile = `/tmp/${fileName}`;
+
     fs.writeFile(localFile, JSON.stringify(req.body), (err)=>{
-       if (err)  console.error(err);
+       if (err)  {
+           console.error(`Something went wrong writing ${localFile}`);
+           console.error(err);
+       }
     });
 
     console.log(`File to populate: ${localFile}`);
