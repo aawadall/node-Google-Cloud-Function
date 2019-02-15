@@ -13,10 +13,11 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
     const fileName = `${uuid.v4()}.json`;
-    fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
+    const localFile = `/tmp/${fileName}`;
+    fs.writeFile(localFile, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
-    const localFile = `/tmp/${fileName}`;
+
     console.log(`File to populate: ${localFile}`);
     storage.bucket(bucketName).upload(localFile, {
         gzip: false,
