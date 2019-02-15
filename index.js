@@ -1,6 +1,7 @@
 const formatter = require('./dateFormatter');
 const {Storage} = require('@google-cloud/storage');
 const fs = require('fs');
+const uuid = require('uuid');
 
 const projectId = 'cloud-functions-230120';
 const storage = new Storage({
@@ -11,7 +12,7 @@ const bucketName = 'gs://atm_events/';
 exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
-    const fileName = '/tmp/LOCAL';
+    const fileName = `/tmp/${uuid.v4()}`;
     fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
