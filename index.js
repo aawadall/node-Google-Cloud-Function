@@ -1,12 +1,12 @@
 const formatter = require('./dateFormatter');
-const app = require('express')();
-const bodyParser = require('body-parser');
-const {storage} = require('@google-cloud/storage');
+const {Storage} = require('@google-cloud/storage');
 const projectId = 'cloud-functions-230120';
+const storage = new Storage({
+    projectId: projectId
+});
+const bucketName = 'gs://atm_events/';
 
 exports.nodeHTTP = function entryHTTP(req, resp) {
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extended: true}));
 
     console.log(`HTTP Request from: ${req.ip}`);
     console.log(`Body: ${JSON.stringify(req.body)}`);
