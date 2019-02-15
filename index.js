@@ -12,7 +12,7 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
 
     console.log(`HTTP Request from: ${req.ip}`);
     const fileName = '/tmp/LOCAL';
-    fs.writeFile(fileName, JSON.stringify(req.body), (err, data)=>{
+    fs.writeFile(fileName, JSON.stringify(req.body), (err)=>{
        if (err)  console.error(err);
     });
     storage.bucket(bucketName).upload(fileName, {
