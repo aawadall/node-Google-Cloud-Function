@@ -7,7 +7,7 @@ exports.nodeHTTP = function entryHTTP(req, resp) {
     app.use(bodyParser.urlencoded({extended: true}));
 
     console.log(`HTTP Request from: ${req.ip}`);
-    console.log(`Body: ${req.body}`);
+    console.log(`Body: ${JSON.stringify(req.body)}`);
     resp.status(200).send(formatter.dateFormatter());
 };
 

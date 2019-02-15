@@ -4,8 +4,6 @@
     <list default="true" id="8f92173b-e445-4998-bd49-a196f5f322ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -149,7 +147,7 @@
       <updated>1549827791474</updated>
       <workItem from="1549827793610" duration="3213000" />
       <workItem from="1549903097260" duration="1667000" />
-      <workItem from="1550265129769" duration="1104000" />
+      <workItem from="1550265129769" duration="1467000" />
     </task>
     <task id="LOCAL-00001" summary="3 entry functions">
       <created>1549828598297</created>
@@ -228,11 +226,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550265303199</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="attempt to use express and body parser">
+      <created>1550266252955</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550266252955</updated>
+    </task>
+    <task id="LOCAL-00013" summary="can i display request body now?">
+      <created>1550266434932</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550266434932</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8230000" />
+    <option name="totallyTimeSpent" value="8593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -273,7 +285,9 @@
     <MESSAGE value="future work" />
     <MESSAGE value="scaffold for storage function" />
     <MESSAGE value="attempt to display HTTP request body" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt to display HTTP request body" />
+    <MESSAGE value="attempt to use express and body parser" />
+    <MESSAGE value="can i display request body now?" />
+    <option name="LAST_COMMIT_MESSAGE" value="can i display request body now?" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data-functions/index.js">
@@ -302,7 +316,7 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
