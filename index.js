@@ -1,9 +1,13 @@
 const formatter = require('./dateFormatter');
-
+const app = require('express')();
+const bodyParser = require('body-parser');
 
 exports.nodeHTTP = function entryHTTP(req, resp) {
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended: true}));
+
     console.log(`HTTP Request from: ${req.ip}`);
-    console.log(`Request Body: ${req.body}`);
+
     resp.status(200).send(formatter.dateFormatter());
 };
 
