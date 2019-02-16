@@ -1,4 +1,5 @@
-
+const Validator = require('jsonschema').Validator;
+const val = new Validator();
 // Validate Event Contents
 exports.validateEvent = (event) => {
     /* TODO: event validation mechanism

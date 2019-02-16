@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f92173b-e445-4998-bd49-a196f5f322ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/business/rules.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/business/eventHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/eventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/business/eventHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/business/rules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business/eventHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="60">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/business/rules.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -88,6 +90,7 @@
         <option value="$PROJECT_DIR$/data-functions/index.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/eventHandler.js" />
+        <option value="$PROJECT_DIR$/business/eventHandler.js" />
         <option value="$PROJECT_DIR$/business/rules.json" />
       </list>
     </option>
@@ -176,7 +179,7 @@
       <workItem from="1549903097260" duration="1667000" />
       <workItem from="1550265129769" duration="5838000" />
       <workItem from="1550283860295" duration="888000" />
-      <workItem from="1550284772142" duration="1007000" />
+      <workItem from="1550284772142" duration="2742000" />
     </task>
     <task id="LOCAL-00001" summary="3 entry functions">
       <created>1549828598297</created>
@@ -353,11 +356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550284525522</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="how to validate messages?">
+      <created>1550285815828</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1550285815828</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14859000" />
+    <option name="totallyTimeSpent" value="16594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="6" />
@@ -389,7 +399,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="3 entry functions" />
     <MESSAGE value="refactor date formatter" />
     <MESSAGE value="date formatter in separate file" />
     <MESSAGE value="skeleton ready" />
@@ -414,7 +423,8 @@
     <MESSAGE value="absolute location" />
     <MESSAGE value="fixed issue, I hope" />
     <MESSAGE value="Event handler module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event handler module" />
+    <MESSAGE value="how to validate messages?" />
+    <option name="LAST_COMMIT_MESSAGE" value="how to validate messages?" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data-functions/index.js">
@@ -449,15 +459,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/business/eventHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="60">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/rules.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>
