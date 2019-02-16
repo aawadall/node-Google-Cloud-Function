@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "description": "Business Rules Configuration File",
+  "commonEventFields": [
+    "event_type"
+  ],
+  "eventTypes": [
+    "cash_add",
+    "cash_swap",
+    "empty_cash",
+    "transaction",
+    "correction",
+    "borrow_funds",
+    "return_funds",
+    "transfer_funds"
+  ]
+}
